@@ -3,6 +3,7 @@ import Home from "./Pages/home";
 import Store from "./Pages/Store";
 
 function App() {
+  
   return (
     <Routes>
       <Route path="/" element={<Home />} />
