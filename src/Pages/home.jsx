@@ -13,7 +13,7 @@ function home(){
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0 m-auto">
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/store">Store</Link>
+                <Link className="nav-link text-white" to="/Store">Store</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link text-white" to="/about">About</Link>
