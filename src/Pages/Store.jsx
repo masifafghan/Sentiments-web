@@ -1,5 +1,4 @@
-
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import '../App.css';
 import 'animate.css';
@@ -87,9 +86,6 @@ function Store( ) {
                   <li className="nav-item">
                     <Link className="nav-link text-white" to="/store">Store</Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-white" to="/about">About</Link>
-                  </li>
                 </ul>
                 <span className="navbar-brand m-auto text-white">Sentiments</span>
               </div>
@@ -109,9 +105,9 @@ function Store( ) {
     <div class='text-white me-2 d-flex wrap'>
         <div class="list-group m-1 me-5" id="opdiv">
           <h3 class='text-white me-1'>Browse By</h3>
-           <a id='ahover' class="list-group-item list-group-item-action ">Men Collection </a>
-           <a id='ahover'  class="list-group-item list-group-item-action   ">Women Collection</a>
-           <a id='ahover' class="list-group-item list-group-item-action  ">Premieum Collection</a>
+           <p id='ahover' class="list-group-item list-group-item-action ">Men Collection </p>
+           <p id='ahover'  class="list-group-item list-group-item-action   ">Women Collection</p>
+           <p id='ahover' class="list-group-item list-group-item-action  ">Premieum Collection</p>
         </div>
         <div class='w-75 d-flex flex-wrap border border-white'>
           {products.map((product) => (
@@ -133,8 +129,8 @@ function Store( ) {
           <h1 className="text-white mx-auto mt-5">Asif</h1>
             <div className="mx-auto mt-5">
               <Link className="nav-link text-white" to="/store">Shop</Link>
-              <Link className="nav-link text-white" to="/">About</Link>
-              <Link className="nav-link text-white" to="/">Contact</Link>
+              <Link className="nav-link text-white" to="/about">About</Link>
+              <Link className="nav-link text-white" to="/contact">Contact</Link>
             </div>
             <div className="w-10 mx-auto mt-5 text-white">
             <p>
