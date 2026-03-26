@@ -3,8 +3,79 @@ import { Link } from "react-router-dom";
 import '../App.css'
 
 function store(){
+       const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const demoProducts = [
+  {
+    _id: "1",
+    name: "Jo Malone",
+    price: 25,
+    image:
+      "/pic/sents-5.jpg"
+  },
+  {
+    _id: "2",
+    name: "Secret",
+    price: 20,
+    image:
+      "/pic/smell.png"
+  },
+  {
+    _id: "3",
+    name: "The Lagend",
+    price: 28,
+    image:
+      "/pic/images (1).jpg"
+  },
+  {
+    _id: "4",
+    name: "Spicy Amber",
+    price: 50,
+    image:
+      "/pic/813Wp4oNOFL.jpg"
+  },
+  {
+    _id: "5",
+    name: "Aristotle",
+    price: 35,
+    image:
+      "/pic/aristotle_secondary_copy (1).jpg"
+  },
+  {
+    _id: "6",
+    name: "Suits",
+    price: 28,
+    image:
+      "/pic/im333.jpg"
+  },
+  {
+    _id: "7",
+    name: "Rain on me",
+    price: 36,
+    image:
+      "/pic/images.jpg"
+  },
+  {
+    _id: "8",
+    name: "Pistachio Treat",
+    price: 45,
+    image: "/pic/img222.jpg",
+  }
+];
+  
+    setProducts(demoProducts);
+  }, []);
+  const addToCart = (product) => {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push({ ...product, quantity: 1 });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert("Added to cart!");
+  };
+
+
     return(
-        <>
+    <>
        <nav className="navbar navbar-expand-sm text-light bg-dark">
           <div className="container-fluid">
             <button className="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +111,19 @@ function store(){
            <a id='ahover'  class="list-group-item list-group-item-action   ">Women Collection</a>
            <a id='ahover' class="list-group-item list-group-item-action  ">Premieum Collection</a>
         </div>
+        <div class='w-75' id='card1'>
+          {products.map((product) => (
+            <div className="product-card " id="wrap" key={product._id}> 
+              <img id="img2"className="w-100" src={product.image} alt={product.name} />
+              <div class="card-body">
+                <h5 className=" m-2 text-center">{product.name}</h5>
+                <p className="price m-2 text-center">${product.price}</p>
+                <button className="cart-btn mx-4 bg-transparent border-white"onClick={() => addToCart(product)}>Add To Cart</button>
+                <button className="cart-btn bg-transparent border-white"><Link to="/order"state={{ product }}className="view-btn text-black ">View Order</Link></button>
+              </div>
+            </div>
+          ))}
+      </div>
     </div>
      <br/>
     <br/>
@@ -68,7 +152,7 @@ function store(){
     <br/>
     </section>
     </body>
-        </>
+    </>
     );
 }
 export default store;
