@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../App.css'
 function home(){
     return (
         <>
@@ -21,8 +22,24 @@ function home(){
           </div>
          </div>
          </nav>
+         <section id="homebg" className=" mx-1">
+        <div className="w-100 border border-dark  animate__animated animate__fadeInUp">
+                     
+        </div>
+        </section>
+        <section className="d-flex m-1">
+         <div className="w-50 ms-1 text-white"  id='rad1' >
+           <h1 classname='m-4 pe-5 pt-5'>About</h1>
+            <h4 classname='me-5 mt-5 animate__animated animate__fadeInUp'>
+            Refers to the feelings, opinions, or attitudes that people hold toward a
+            particular topic, person, or issue.
+            </h4>
+         </div>
+         <div className="w-50 " >
+           <img className="w-100 h-100" src="/Images/sents-5.jpg" alt="About" id='rad2' class='img12' />
+         </div>
+       </section>
         </>
-
     );
 }
 export default home;
