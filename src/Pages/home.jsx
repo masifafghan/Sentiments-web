@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import '../App.css'
+import '../App.css';
+import 'animate.css'
 function home(){
     return (
         <>
@@ -22,10 +23,8 @@ function home(){
           </div>
          </div>
          </nav>
-         <section id="homebg" className=" mx-1">
-        <div className="w-100 border border-dark  animate__animated animate__fadeInUp">
-                     
-        </div>
+         <section id="homebg" className="d-flex justify-item-center justify-content-center  mx-1 animate__animated animate__fadeInUp border border-black">
+            <button type="button" class="btn">Shop now</button>
         </section>
         <section className="d-flex m-1">
          <div className="w-50 ms-1 text-white"  id='rad1' >
