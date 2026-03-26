@@ -105,9 +105,6 @@ function Store( ) {
     <div class='text-white me-2 d-flex wrap'>
         <div class="list-group m-1 me-5" id="opdiv">
           <h3 class='text-white me-1'>Browse By</h3>
-           <p id='ahover' class="list-group-item list-group-item-action ">Men Collection </p>
-           <p id='ahover'  class="list-group-item list-group-item-action   ">Women Collection</p>
-           <p id='ahover' class="list-group-item list-group-item-action  ">Premieum Collection</p>
         </div>
         <div class='w-75 d-flex flex-wrap border border-white'>
           {products.map((product) => (
