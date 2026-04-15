@@ -12,3 +12,8 @@ nav{
   
   background-image: linear-gradient(to right, black, rgb(155, 210, 191)); 
 }
+#store{
+  padding-left: 9%;
+  max-width: 80%;
+  margin-left: 10%;
+}

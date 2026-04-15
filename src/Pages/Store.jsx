@@ -76,22 +76,7 @@ function Store( ) {
 
   return (
     <>
-          <nav className="navbar navbar-expand-sm text-light bg-dark">
-            <div className="container-fluid">
-              <button className="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mb-2 mb-lg-0 m-auto">
-                  <li className="nav-item">
-                    <Link className="nav-link text-white" to="/store">Store</Link>
-                  </li>
-                </ul>
-                <span className="navbar-brand m-auto text-white">Sentiments</span>
-              </div>
-            </div>
-          </nav>
-          <section></section>
+      <section></section>
     <body class='bg-dark'>
       <nav1 aria-label="breadcrumb">
        <ol class="breadcrumb mt-5">
@@ -102,19 +87,16 @@ function Store( ) {
       <h1 class='text-white me-3 animate__animated animate__fadeInUp'>ALL Products</h1>
       <br/>
       <br/>
-    <div class='text-white me-2 d-flex wrap'>
-        <div class="list-group m-1 me-5" id="opdiv">
-          <h3 class='text-white me-1'>Browse By</h3>
-        </div>
-        <div class='w-75 d-flex flex-wrap border border-white'>
+    <div class='text-white me-2 d-flex '>
+        <div class='d-flex flex-wrap border border-white' id="store" >
           {products.map((product) => (
-            <div className="product-card w-25 " id="wrap" key={product._id}> 
+            <div className="product-card w-25    m-3" id="wrap" key={product._id}> 
               <img id="img2"className="w-100" src={product.image} alt={product.name} />
               <div class="card-body border border-dark">
-                <h5 className=" text-center">{product.name}</h5>
+                <p className="fs-6 fs-md-3 text-center">{product.name}</p>
                 <p className="text-center">${product.price}</p>
-                <button className="cart-btn mx-2 mb-3  bg-transparent border-white"onClick={() => addToCart(product)}>Add To Cart</button>
-                <button className="cart-btn mx-2 mb-3 bg-transparent border-white"><Link to="/order"state={{ product }}className="view-btn text-black ">View Order</Link></button>
+                <button type="button" class="btn btn-light mx-0 mx-lg-2 mb-2 btn-sm "onClick={() => addToCart(product)}>Add to Cart</button>
+                <button type="button" class="btn btn-light mx-0 mx-lg- mb-2 btn-sm" ><Link to="/order"state={{ product }}className="view-btn text-black ">View Order</Link></button>
               </div>
             </div>
           ))}
