@@ -8,3 +8,7 @@
 body{
  background-image: linear-gradient(to bottom, black, rgb(155, 210, 191)); 
 }
+nav{
+  
+  background-image: linear-gradient(to right, black, rgb(155, 210, 191)); 
+}
