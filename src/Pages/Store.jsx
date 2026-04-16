@@ -93,10 +93,10 @@ function Store( ) {
             <div className="product-card w-25    m-3" id="wrap" key={product._id}> 
               <img id="img2"className="w-100" src={product.image} alt={product.name} />
               <div class="card-body border border-dark">
-                <p className="fs-6 fs-md-3 text-center">{product.name}</p>
+                <p className="fs-5 fs-sm-6 text-center">{product.name}</p>
                 <p className="text-center">${product.price}</p>
                 <button type="button" class="btn btn-light mx-0 mx-lg-2 mb-2 btn-sm "onClick={() => addToCart(product)}>Add to Cart</button>
-                <button type="button" class="btn btn-light mx-0 mx-lg- mb-2 btn-sm" ><Link to="/order"state={{ product }}className="view-btn text-black ">View Order</Link></button>
+                <button type="button" class="btn btn-light mx-0 mx-lg- mb-2 btn-sm" ><Link to="/cart"state={{ product }}className="view-btn text-black ">View Order</Link></button>
               </div>
             </div>
           ))}
