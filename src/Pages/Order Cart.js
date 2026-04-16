@@ -53,7 +53,7 @@ function Cart() {
         </div>
         <div className=" text-center mb-5 pb-5">
           <h2 className="text-white">Total: ${totalPrice}</h2>
-          <button className="order-btn  bg-transparent text-white border-white" onClick={() => navigate("/order-confirm")}> Place Order </button>
+          <button className="order-btn  bg-transparent text-white border-white" onClick={() => navigate("/Order     ")}> Place Order </button>
         </div>    
     </section>
     <section className="d-flex bg-black" id="dev">
