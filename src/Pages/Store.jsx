@@ -95,8 +95,8 @@ function Store( ) {
               <div class="card-body border border-dark">
                 <p className="fs-5 fs-sm-6 text-center">{product.name}</p>
                 <p className="text-center">${product.price}</p>
-                <button type="button" class="btn btn-light mx-0 mx-lg-2 mb-2 btn-sm "onClick={() => addToCart(product)}>Add to Cart</button>
-                <button type="button" class="btn btn-light mx-0 mx-lg- mb-2 btn-sm" ><Link to="/cart"state={{ product }}className="view-btn text-black ">View Order</Link></button>
+                <button class="mx-0 mx-lg-3 mb-2 "onClick={() => addToCart(product)}>Add Cart</button>
+                <button class=" mx-0 mx-lg-2 mb-2 " ><Link to="/cart"state={{ product }}className="view-btn text-black ">View cart</Link></button>
               </div>
             </div>
           ))}
