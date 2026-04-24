@@ -54,7 +54,7 @@ function home(){
           <div class="card  bg-transparent text-white">
            <h1 classname=''>About</h1>
             <h4 classname=' animate__animated animate__fadeInUp'>
-            Refers to the feelings, opinions, or attitudes that people hold toward a
+            Refers to the feelings, aopinions, or attitudes that people hold toward a
             particular topic, person, or issue.
             </h4>
           </div>
