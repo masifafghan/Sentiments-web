@@ -55,7 +55,7 @@ function home(){
            <h1 classname=''>About</h1>
             <h4 classname=' animate__animated animate__fadeInUp'>
             Refers to the feelings, aopinions, or attitudes that people hold toward a
-            particular topic, person, or issue.
+            particular topic, person, and issue.
             </h4>
           </div>
          </div>
