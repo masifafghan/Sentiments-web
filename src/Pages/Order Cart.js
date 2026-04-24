@@ -73,7 +73,7 @@ function Cart() {
            </div>
            <div className="w-10 mx-auto mt-5 text-white d-block">
                  <p>0312-7278576</p>
-             <p>Asif@gmail.com</p>
+             <p>Asif@gmail.com </p>
              <p>Dera Ghazi Khan </p>
            </div>
     </section>
