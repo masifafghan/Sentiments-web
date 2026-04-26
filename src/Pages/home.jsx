@@ -5,6 +5,7 @@ import 'animate.css';
 function home(){
     return (
         <>
+        {/* Nav Bar */}
         <nav className="navbar navbar-expand-lg">
            <div className="container-fluid ">
              <a className="navbar-brand text-white" href="/">Sentiments</a>
@@ -23,8 +24,7 @@ function home(){
             </div>
           </div>
         </nav>
-
-        
+        {/* HERO SECTION  */}
         <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
